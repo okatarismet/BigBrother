@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
 
 export default function App() {
+  const [locked,setLocked] = React.useState(false);
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>locked maybe  {locked ? '++++++' : 'XXXXX'}</Text>
       <StatusBar style="auto" />
     </View>
   );
